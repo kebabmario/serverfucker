@@ -403,3 +403,24 @@ header h1 span {
   .info-grid { grid-template-columns: 1fr; }
   .server-logo, .no-logo { width: 52px; height: 52px; }
 }
+
+.footer-links {
+  position: fixed;
+  bottom: 14px;
+  right: 18px;
+  display: flex;
+  gap: 14px;
+  z-index: 2;
+}
+
+.footer-links a {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+  opacity: 1;
+}
