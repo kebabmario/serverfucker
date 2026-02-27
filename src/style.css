@@ -424,3 +424,14 @@ header h1 span {
   color: white;
   opacity: 1;
 }
+
+.site-logo {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+  border-radius: 10px;
+  z-index: 100;
+}
