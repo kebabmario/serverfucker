@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>serverfucker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Server<span>fucker :></span></h1>
+      <p class="subtitle">i check the status of your mc server</p>
+    </header>
+
+    <div class="search-box">
+      <div class="input-row">
+        <input
+          type="text"
+          id="serverInput"
+          placeholder="Enter server address (e.g. as.stray.gg)"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <div class="edition-toggle">
+          <button class="toggle-btn active" id="javaBtn" onclick="setEdition('java')">lagva</button>
+          <button class="toggle-btn" id="bedrockBtn" onclick="setEdition('bedrock')">bugrock</button>
+        </div>
+        <button class="check-btn" onclick="checkServer()">fuck it</button>
+      </div>
+    </div>
+
+    <div id="result" class="result hidden"></div>
+    <div id="error" class="error hidden"></div>
+    <div id="loader" class="loader hidden">
+      <div class="spinner"></div>
+      <span>pinging ur server hold on...</span>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
