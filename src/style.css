@@ -435,3 +435,15 @@ header h1 span {
   border-radius: 10px;
   z-index: 100;
 }
+
+<style>
+  /* Full-screen, behind everything */
+  #galaxyCanvas{
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+  }
+</style>
