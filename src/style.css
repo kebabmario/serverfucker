@@ -436,8 +436,6 @@ header h1 span {
   z-index: 100;
 }
 
-<style>
-  /* Full-screen, behind everything */
   #galaxyCanvas{
     position: fixed;
     inset: 0;
@@ -446,4 +444,3 @@ header h1 span {
     z-index: -1;
     pointer-events: none;
   }
-</style>
