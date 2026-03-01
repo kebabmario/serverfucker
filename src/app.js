@@ -171,7 +171,7 @@ function escapeHTML(str) {
   const ARM_COUNT = 4;
 
   const rand = (a, b) => a + Math.random() * (b - a);
-  const clamp = (x, a, b) => Math.max(a, Math.min(b, x)));
+  const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 
   function spiralPoint(t, arm, radiusScale = 1) {
     const r = Math.pow(t, 0.7) * GALAXY_RADIUS * radiusScale;
